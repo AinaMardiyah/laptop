@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="img/Logo Toko.PNG" alt="Logo Toko" class="logo-header">
+    <h1>Katalog Laptop</h1>
+  </header>
+
+  <main class="galeri">
+
+    <!-- BARIS 1: MACBOOK -->
+    <section class="baris">
+      <h2>MacBook</h2>
+      <div class="kotak-wrapper">
+        <div class="kotak"
+             data-nama="MacBook Neo"
+             data-harga="Rp 12.000.000"
+             data-deskripsi="Laptop Apple yang ringkas dan ringan, cocok untuk kuliah dan pekerjaan harian.">
+          <img src="img/Macbook Neo.PNG" alt="MacBook Neo">
+          <p class="nama-produk">MacBook Neo</p>
+          <p class="harga-produk">Rp 12.000.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="MacBook Air M5"
+             data-harga="Rp 18.000.000"
+             data-deskripsi="Seri Air dengan bodi tipis dan baterai awet, nyaman dibawa ke mana-mana.">
+          <img src="img/Macbook Air M5.PNG" alt="MacBook Air M5">
+          <p class="nama-produk">MacBook Air M5</p>
+          <p class="harga-produk">Rp 18.000.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="MacBook Pro M1"
+             data-harga="Rp 15.000.000"
+             data-deskripsi="Seri Pro bertenaga untuk desain grafis, editing video, dan pemrograman.">
+          <img src="img/Macbook Pro M1.PNG" alt="MacBook Pro M1">
+          <p class="nama-produk">MacBook Pro M1</p>
+          <p class="harga-produk">Rp 15.000.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARIS 2: ASUS -->
+    <section class="baris">
+      <h2>Asus</h2>
+      <div class="kotak-wrapper">
+        <div class="kotak"
+             data-nama="Asus Vivobook"
+             data-harga="Rp 7.500.000"
+             data-deskripsi="Laptop serbaguna dengan harga bersahabat, pas untuk pelajar dan mahasiswa.">
+          <img src="img/Asus Vivobook.PNG" alt="Asus Vivobook">
+          <p class="nama-produk">Asus Vivobook</p>
+          <p class="harga-produk">Rp 7.500.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="Asus Zenbook"
+             data-harga="Rp 14.000.000"
+             data-deskripsi="Laptop premium yang tipis dan elegan, cocok untuk profesional yang sering berpindah tempat.">
+          <img src="img/Asus Zenbook.PNG" alt="Asus Zenbook">
+          <p class="nama-produk">Asus Zenbook</p>
+          <p class="harga-produk">Rp 14.000.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="Asus ExpertBook"
+             data-harga="Rp 11.000.000"
+             data-deskripsi="Laptop bisnis yang tahan banting dengan fitur keamanan, cocok untuk kantor.">
+          <img src="img/Asus ExpertBook.PNG" alt="Asus ExpertBook">
+          <p class="nama-produk">Asus ExpertBook</p>
+          <p class="harga-produk">Rp 11.000.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARIS 3: ZYREX -->
+    <section class="baris">
+      <h2>Zyrex</h2>
+      <div class="kotak-wrapper">
+        <div class="kotak"
+             data-nama="Zyrex L-BOOK"
+             data-harga="Rp 3.500.000"
+             data-deskripsi="Laptop lokal dengan harga terjangkau untuk kebutuhan belajar dan mengetik.">
+          <img src="img/Zyrex L-BOOK.PNG" alt="Zyrex L-BOOK">
+          <p class="nama-produk">Zyrex L-BOOK</p>
+          <p class="harga-produk">Rp 3.500.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="Zyrex Ultra 2 N4500"
+             data-harga="Rp 4.200.000"
+             data-deskripsi="Laptop ringkas berprosesor Intel N4500 untuk tugas ringan seperti browsing dan dokumen.">
+          <img src="img/Zyrex Ultra 2 N4500.PNG" alt="Zyrex Ultra 2 N4500">
+          <p class="nama-produk">Zyrex Ultra 2 N4500</p>
+          <p class="harga-produk">Rp 4.200.000</p>
+        </div>
+        <div class="kotak"
+             data-nama="Zyrex D-TECH AMD Ryzen 5"
+             data-harga="Rp 7.000.000"
+             data-deskripsi="Laptop berprosesor AMD Ryzen 5 yang lebih bertenaga untuk multitasking.">
+          <img src="img/Zyrex D-TECH AMD Ryzen 5.PNG" alt="Zyrex D-TECH AMD Ryzen 5">
+          <p class="nama-produk">Zyrex D-TECH AMD Ryzen 5</p>
+          <p class="harga-produk">Rp 7.000.000</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BAR PRODUK YANG DIPILIH -->
+  <div id="bar-pilihan">Belum ada produk dipilih</div>
+
+  <!-- MODAL DESKRIPSI -->
+  <div id="modal">
+    <div class="modal-isi">
+      <button id="tutup" aria-label="Tutup">&times;</button>
+      <img id="modal-foto" src="" alt="">
+      <h3 id="modal-nama"></h3>
+      <p id="modal-harga"></p>
+      <p id="modal-deskripsi"></p>
+      <button id="btn-pilih">Pilih Produk Ini</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

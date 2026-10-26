@@ -1,0 +1,174 @@
+/* ===== RESET & DASAR ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding-bottom: 70px;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: white;
+}
+
+.logo-header {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+/* ===== GALERI ===== */
+.galeri {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.baris {
+  margin-bottom: 40px;
+}
+
+.baris h2 {
+  margin: 20px 0 15px;
+}
+
+.kotak-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* ===== KOTAK PRODUK ===== */
+.kotak {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.kotak:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.kotak img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.nama-produk {
+  padding: 12px 12px 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.harga-produk {
+  padding: 0 12px 14px;
+  text-align: center;
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ===== MODAL ===== */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#modal.aktif {
+  display: flex;
+}
+
+.modal-isi {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-isi img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.modal-isi h3 {
+  margin: 15px 0 8px;
+}
+
+#modal-harga {
+  color: #c0392b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#modal-deskripsi {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#tutup {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#btn-pilih {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-pilih:hover {
+  background: #444;
+}
+
+/* ===== BAR PRODUK DIPILIH ===== */
+#bar-pilihan {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIF (HP) ===== */
+@media (max-width: 700px) {
+  .kotak-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
